@@ -5,10 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public bool FacingLeft {get {return facingLeft;} set {facingLeft = value;} } // allows other classes to call this function to return the private facingLeft variable
+    public bool FacingLeft {get {return facingLeft;} } // allows other classes to call this function to return the private facingLeft variable
     public static PlayerController Instance;
 
-    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float startingMoveSpeed = 5f;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float dashSpeed = 4f;
+    [SerializeField] private TrailRenderer myTR;
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -17,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer playerSprite;
 
     private bool facingLeft = false;
+    private bool isDashing = false;
 
     private void Awake()
     {
@@ -27,15 +31,17 @@ public class PlayerController : MonoBehaviour
         playerSprite = GetComponent<SpriteRenderer>();
     }
 
+    void Start()
+    {
+        playerControls.Combat.Dash.performed += _ => Dash();
+        moveSpeed = startingMoveSpeed;
+    }
+
     private void OnEnable()
     {
         playerControls.Enable();
     }
 
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -68,12 +74,34 @@ public class PlayerController : MonoBehaviour
         if (mousePos.x < playerScreenPoint.x)
         {
             playerSprite.flipX = true;
-            FacingLeft = true;
+            facingLeft = true;
         }
         else
         {
             playerSprite.flipX = false;
-            FacingLeft = false;
+            facingLeft = false;
         }
+    }
+    
+    private void Dash()
+    {
+        if (!isDashing)    
+        {   
+            isDashing = true;
+            moveSpeed *= dashSpeed;
+            myTR.emitting = true;
+            StartCoroutine(EndDashRoutine());
+        }
+    }
+
+    private IEnumerator EndDashRoutine()
+    {
+        float dashTime = .2f;
+        float dashCD = .25f;
+        yield return new WaitForSeconds(dashTime);
+        moveSpeed = startingMoveSpeed;
+        myTR.emitting = false;
+        yield return new WaitForSeconds(dashCD);
+        isDashing = false;
     }
 }

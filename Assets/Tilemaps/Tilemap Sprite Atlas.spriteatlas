@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tilemap Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1888044709, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -384277486, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -826547698, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 977268435, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -506160317, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 629471968, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 622397314, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -130452601, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 2059277185, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1069467405, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -956451882, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -411775244, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -545311845, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1085048960, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1605792984, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 177567911, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1975867930, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 193185949, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1485873476, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -528091271, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -724309109, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -2078494425, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1201924993, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1863688763, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 484892173, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -547786896, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1953754884, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1655452483, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1469802060, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1454523776, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 200339296, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 141353868, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1407750506, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 13084755, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1534205053, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -2003729149, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 78735320, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -435691152, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -822614857, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -353477370, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1909767639, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -44183056, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1690483183, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 651604223, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1120754273, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 510028364, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 137811426, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 520605409, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 626281072, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -691871283, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 2062780082, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 155792182, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1046849505, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 661722870, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 132174240, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 200524471, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1762655776, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1108041247, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 110990324, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 2115906824, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 53936831, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 2122625186, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1404417038, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1588032977, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 797450936, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1205905572, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1172985958, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1650070783, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -829028191, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1649083693, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1664064707, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1123355488, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1607927467, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -818476598, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -654366348, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1105084644, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1864755323, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -2129862746, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -221058186, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1552063585, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1969798875, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1814744882, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -600539193, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: 1093595921, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -7210489, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  - {fileID: -1237750060, guid: f56e53277e9cc7e478a431eb55ffb89a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Outdoor Tile Spritesheet_59
+  - Outdoor Tile Spritesheet_58
+  - Outdoor Tile Spritesheet_28
+  - Outdoor Tile Spritesheet_51
+  - Outdoor Tile Spritesheet_29
+  - Outdoor Tile Spritesheet_50
+  - Outdoor Tile Spritesheet_53
+  - Outdoor Tile Spritesheet_52
+  - Outdoor Tile Spritesheet_24
+  - Outdoor Tile Spritesheet_55
+  - Outdoor Tile Spritesheet_25
+  - Outdoor Tile Spritesheet_39
+  - Outdoor Tile Spritesheet_54
+  - Outdoor Tile Spritesheet_26
+  - Outdoor Tile Spritesheet_38
+  - Outdoor Tile Spritesheet_57
+  - Outdoor Tile Spritesheet_27
+  - Outdoor Tile Spritesheet_37
+  - Outdoor Tile Spritesheet_56
+  - Outdoor Tile Spritesheet_20
+  - Outdoor Tile Spritesheet_36
+  - Outdoor Tile Spritesheet_21
+  - Outdoor Tile Spritesheet_35
+  - Outdoor Tile Spritesheet_22
+  - Outdoor Tile Spritesheet_34
+  - Outdoor Tile Spritesheet_23
+  - Outdoor Tile Spritesheet_33
+  - Outdoor Tile Spritesheet_32
+  - Outdoor Tile Spritesheet_31
+  - Outdoor Tile Spritesheet_30
+  - Outdoor Tile Spritesheet_6
+  - Outdoor Tile Spritesheet_7
+  - Outdoor Tile Spritesheet_4
+  - Outdoor Tile Spritesheet_5
+  - Outdoor Tile Spritesheet_2
+  - Outdoor Tile Spritesheet_3
+  - Outdoor Tile Spritesheet_0
+  - Outdoor Tile Spritesheet_1
+  - Outdoor Tile Spritesheet_8
+  - Outdoor Tile Spritesheet_9
+  - Outdoor Tile Spritesheet_60
+  - Outdoor Tile Spritesheet_61
+  - Outdoor Tile Spritesheet_62
+  - Outdoor Tile Spritesheet_63
+  - Outdoor Tile Spritesheet_73
+  - Outdoor Tile Spritesheet_64
+  - Outdoor Tile Spritesheet_72
+  - Outdoor Tile Spritesheet_65
+  - Outdoor Tile Spritesheet_71
+  - Outdoor Tile Spritesheet_15
+  - Outdoor Tile Spritesheet_66
+  - Outdoor Tile Spritesheet_70
+  - Outdoor Tile Spritesheet_46
+  - Outdoor Tile Spritesheet_14
+  - Outdoor Tile Spritesheet_67
+  - Outdoor Tile Spritesheet_77
+  - Outdoor Tile Spritesheet_47
+  - Outdoor Tile Spritesheet_17
+  - Outdoor Tile Spritesheet_68
+  - Outdoor Tile Spritesheet_76
+  - Outdoor Tile Spritesheet_44
+  - Outdoor Tile Spritesheet_16
+  - Outdoor Tile Spritesheet_69
+  - Outdoor Tile Spritesheet_75
+  - Outdoor Tile Spritesheet_45
+  - Outdoor Tile Spritesheet_11
+  - Outdoor Tile Spritesheet_74
+  - Outdoor Tile Spritesheet_42
+  - Outdoor Tile Spritesheet_10
+  - Outdoor Tile Spritesheet_43
+  - Outdoor Tile Spritesheet_13
+  - Outdoor Tile Spritesheet_40
+  - Outdoor Tile Spritesheet_12
+  - Outdoor Tile Spritesheet_79
+  - Outdoor Tile Spritesheet_41
+  - Outdoor Tile Spritesheet_78
+  - Outdoor Tile Spritesheet_19
+  - Outdoor Tile Spritesheet_18
+  - Outdoor Tile Spritesheet_82
+  - Outdoor Tile Spritesheet_83
+  - Outdoor Tile Spritesheet_48
+  - Outdoor Tile Spritesheet_80
+  - Outdoor Tile Spritesheet_49
+  - Outdoor Tile Spritesheet_81
+  - Outdoor Tile Spritesheet_84
+  - Outdoor Tile Spritesheet_85
+  m_RenderDataMap: {}
+  m_Tag: Tilemap Sprite Atlas
+  m_IsVariant: 0
