@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
-
     public bool FacingLeft {get {return facingLeft;} } // allows other classes to call this function to return the private facingLeft variable
-    public static PlayerController Instance;
 
     [SerializeField] private float startingMoveSpeed = 5f;
     [SerializeField] private float moveSpeed;
@@ -22,9 +20,9 @@ public class PlayerController : MonoBehaviour
     private bool facingLeft = false;
     private bool isDashing = false;
 
-    private void Awake()
+    protected override void Awake() // this will overried the singleton class awake method
     {
-        Instance = this;
+        base.Awake(); // this will call the awake function in the singleton class, then finish the local awake function
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();

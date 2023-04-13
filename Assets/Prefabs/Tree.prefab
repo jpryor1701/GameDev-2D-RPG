@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4670885316993859575}
   - component: {fileID: 4670885316993859574}
   - component: {fileID: 4670885316993859568}
+  - component: {fileID: 7963809260535248075}
+  - component: {fileID: 7680907120046639420}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -101,3 +103,33 @@ CapsuleCollider2D:
   m_Offset: {x: 8.687151e-24, y: -0.000000004336595}
   m_Size: {x: 0.64056736, y: 0.34174415}
   m_Direction: 1
+--- !u!58 &7963809260535248075
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670885316993859573}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.9913368}
+  serializedVersion: 2
+  m_Radius: 1.1051977
+--- !u!114 &7680907120046639420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670885316993859573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce0575fa75d41d469be8337b47bae45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparencyAmount: 0.8
+  fadeTime: 0.4
