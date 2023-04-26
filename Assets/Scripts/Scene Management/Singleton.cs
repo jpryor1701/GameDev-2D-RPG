@@ -19,6 +19,9 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T> // T (or any le
             instance = (T)this; // cast this object as a generic type
         }
 
-        DontDestroyOnLoad(gameObject);
+        if (!gameObject.transform.parent)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
