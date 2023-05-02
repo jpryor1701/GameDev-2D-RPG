@@ -10,6 +10,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float moveSpeed;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTR;
+    [SerializeField] private Transform weaponCollider;
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -52,9 +53,14 @@ public class PlayerController : Singleton<PlayerController>
         AdjustPlayerFacingDirection();
     }
 
+    public Transform GetWeaponCollider()
+    {
+        return weaponCollider;
+    }
+
     private void PlayerInput()
     {
-        movement = playerControls.Movement.Move.ReadValue<Vector2>();
+        movement = playerControls.Movement.Move.ReadValue<Vector2>(); // get vector2 from the keyboard controls (WASD)
         myAnimator.SetFloat("moveX", movement.x);
         myAnimator.SetFloat("moveY", movement.y);
     }

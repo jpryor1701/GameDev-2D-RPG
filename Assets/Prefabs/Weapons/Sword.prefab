@@ -121,4 +121,4 @@ MonoBehaviour:
   attackSpeed: 0.5
   slashAnimPrefab: {fileID: 6306788803158994545, guid: 8a54b2f61b089a140951c49c590a94af, type: 3}
   slashAnimationSpawnPoint: {fileID: 0}
-  weaponCollider: {fileID: 0}
+  weaponInfo: {fileID: 11400000, guid: 0d9ea89d2340e47418deccf57fa13cae, type: 2}

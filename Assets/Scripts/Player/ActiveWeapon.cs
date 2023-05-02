@@ -7,6 +7,8 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public MonoBehaviour CurrentActiveWeapon { get; private set; }
     
     private PlayerControls playerControls;
+    private float attackCD;
+
     private bool attackButtonDown = false;
     private bool isAttacking = false;
 
@@ -25,6 +27,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         playerControls.Combat.Attack.started += _ => StartAttacking(); // declares that nothing (_) will be passed through as a lambda into StartAttack funtion
         playerControls.Combat.Attack.canceled += _ => StopAttacking();
+        AttackCooldown();
     }
 
     private void Update()
@@ -37,14 +40,24 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         CurrentActiveWeapon = null;
     }
 
+    private void AttackCooldown()
+    {
+        isAttacking = true;
+        StopAllCoroutines();
+        StartCoroutine(TimeBetweenAttacksRoutine());
+    }
+
+    private IEnumerator TimeBetweenAttacksRoutine()
+    {
+        yield return new WaitForSeconds(attackCD);
+        isAttacking = false;
+    }
+
     public void NewWeapon (MonoBehaviour newWeapon)
     {
         CurrentActiveWeapon = newWeapon;
-    }
-
-    public void ToggleIsAttacking(bool value)
-    {
-        isAttacking = value;
+        AttackCooldown();
+        attackCD = (CurrentActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
     }
     
     private void StartAttacking()
@@ -59,9 +72,9 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     public void Attack()
     {
-        if (attackButtonDown && !isAttacking)
+        if (attackButtonDown && !isAttacking && CurrentActiveWeapon)
         {
-            isAttacking = true;
+            AttackCooldown();
             (CurrentActiveWeapon as IWeapon).Attack(); // call current active weapon, use the iWeapon interface, and call attack
         }
         
