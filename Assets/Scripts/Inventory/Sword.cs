@@ -7,7 +7,7 @@ public class Sword : MonoBehaviour, IWeapon
 
     
     private Animator myAnimator;    
-    [SerializeField] float attackSpeed = 1f;
+    //[SerializeField] float attackSpeed = 1f;
 
     [SerializeField] private GameObject slashAnimPrefab;
     [SerializeField] private Transform slashAnimationSpawnPoint;
