@@ -17,7 +17,7 @@ public class ActiveInventory : MonoBehaviour
     private void Start()
     {
         playercontrols.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
-        // passing the inventory.keyboard value into ctx (context) and then passing that as a lambda into ToggleActiveSlot with the value of context in float, casting as int
+        // when the keyboard action is "performed", pass that context (ctx) into the ToggleActiveSlot() function via a lambda and convert contect into int
 
         ToggleActiveHighlight(0);
     }

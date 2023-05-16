@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Singleton<PlayerHealth>
 {
     [SerializeField] private float maxHealth;
     [SerializeField] private float recoveryTime = 1f;
@@ -14,8 +14,9 @@ public class PlayerHealth : MonoBehaviour
 
     private Flash flash;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         knockback = GetComponent<Knockback>();
         flash = GetComponent<Flash>();
     }
@@ -35,10 +36,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void HealPlayer()
+    {
+        currentHealth += 1;
+    }
+
     public void TakeDamage(int damageAmount, Transform hitTransform)
     {
         if (!canTakeDamage) { return; }
-        
+
+        ScreenShakeManager.Instance.ShakeScreen();
         knockback.GetKnockedBack(hitTransform, knockbackThrust);
         StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;

@@ -25,8 +25,8 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     
     private void Start()
     {
-        playerControls.Combat.Attack.started += _ => StartAttacking(); // declares that nothing (_) will be passed through as a lambda into StartAttack funtion
-        playerControls.Combat.Attack.canceled += _ => StopAttacking();
+        playerControls.Combat.Attack.started += _ => StartAttacking(); // when the attack action is "started", run the function StartAttacking
+        playerControls.Combat.Attack.canceled += _ => StopAttacking(); // when the attack action is "cancelled", run the function StopAttacking
         AttackCooldown();
     }
 
