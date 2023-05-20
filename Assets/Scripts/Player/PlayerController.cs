@@ -24,7 +24,7 @@ public class PlayerController : Singleton<PlayerController>
 
     protected override void Awake() // this will overried the singleton class awake method
     {
-        base.Awake(); // this will call the awake function in the singleton class, then finish the local awake function
+        base.Awake(); // this will call the awake function in the singleton class, then contiune with the local awake function
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -36,6 +36,7 @@ public class PlayerController : Singleton<PlayerController>
     {
         playerControls.Combat.Dash.performed += _ => Dash();
         moveSpeed = startingMoveSpeed;
+        ActiveInventory.Instance.EquipStartingWeapon();
     }
 
     private void OnEnable()
@@ -43,6 +44,10 @@ public class PlayerController : Singleton<PlayerController>
         playerControls.Enable();
     }
 
+    private void Ondisable()
+    {
+        playerControls.Disable();
+    }
 
     void Update()
     {
@@ -69,7 +74,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Move()
     {
-        if (knockback.GettingKnockedBack) { return; }
+        if (knockback.GettingKnockedBack || PlayerHealth.Instance.IsDead == true) { return; }
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
     }
 
@@ -92,8 +97,9 @@ public class PlayerController : Singleton<PlayerController>
     
     private void Dash()
     {
-        if (!isDashing)    
+        if (!isDashing && Stamina.Instance.CurrentStamina > 0)    
         {   
+            Stamina.Instance.UseStamina();
             isDashing = true;
             moveSpeed *= dashSpeed;
             myTR.emitting = true;

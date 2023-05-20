@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4587957247843784566}
   - component: {fileID: 4587957247843784565}
   - component: {fileID: 4587957247843784564}
+  - component: {fileID: 3553588876205724164}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -193,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c070e5e7bff95af43a0eb8151d22df54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 3
   recoveryTime: 1
 --- !u!114 &4587957247843784565
 MonoBehaviour:
@@ -222,6 +223,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: 73c9c1e3671bfaf48888168b8bed83be, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!114 &3553588876205724164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587957247843784524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0bca1ab7ef7e54e9417b24c6e62270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullStaminaImage: {fileID: 21300000, guid: d5d7feb16539e6647bc74ed8ba669c2b, type: 3}
+  emptyStamiaImage: {fileID: 21300000, guid: 66c32fffd7d049840999483c0638e744, type: 3}
+  timeBetweenStaminRefresh: 3
 --- !u!1 &4587957248491492551
 GameObject:
   m_ObjectHideFlags: 0

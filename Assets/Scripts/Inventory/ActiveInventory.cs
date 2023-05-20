@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveInventory : MonoBehaviour
+public class ActiveInventory : Singleton<ActiveInventory>
 {
 
     private int activeSlotIndexNum = 0;
 
     private PlayerControls playercontrols;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         playercontrols = new PlayerControls();    
     }
 
@@ -18,13 +19,16 @@ public class ActiveInventory : MonoBehaviour
     {
         playercontrols.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
         // when the keyboard action is "performed", pass that context (ctx) into the ToggleActiveSlot() function via a lambda and convert contect into int
-
-        ToggleActiveHighlight(0);
     }
 
     private void OnEnable()
     {
         playercontrols.Enable();
+    }
+
+    public void EquipStartingWeapon()
+    {
+        ToggleActiveHighlight(0);
     }
 
     private void ToggleActiveSlot (int numValue)
@@ -46,6 +50,8 @@ public class ActiveInventory : MonoBehaviour
 
     private void ChangeActiveWeapon()
     {
+        if (PlayerHealth.Instance.IsDead) { return; }
+        
         if (ActiveWeapon.Instance.CurrentActiveWeapon != null)
         {
             Destroy(ActiveWeapon.Instance.CurrentActiveWeapon.gameObject);

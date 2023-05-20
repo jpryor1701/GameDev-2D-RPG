@@ -104,6 +104,8 @@ GameObject:
   - component: {fileID: 3152611582145062468}
   - component: {fileID: 3425611365592902514}
   - component: {fileID: 9219728182121545701}
+  - component: {fileID: 6895573740058921067}
+  - component: {fileID: -8600667230531918963}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -232,6 +234,7 @@ MonoBehaviour:
   attackRange: 5
   enemyType: {fileID: 9219728182121545701}
   attackCD: 2
+  stopMovingWhileAttacking: 0
 --- !u!114 &4313583635444552010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,3 +325,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4181619331469651120, guid: 2221211b5cfb42743915035c5e62617a, type: 3}
+  bulletMoveSpeed: 0.1
+  burstCount: 1
+  timeBetweenBursts: 0.1
+  restTime: 1
+  projectilesPerBusrt: 1
+  angleSpread: 0
+  startingDistance: 0.1
+  stagger: 0
+  oscillate: 0
+--- !u!114 &6895573740058921067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313583635444552015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2215406942cbfc4f95d798f7b626a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoinPrefab: {fileID: 2931593369882102028, guid: 1f0c00489a771644d9a84bfdbca145b7, type: 3}
+  healthGlobePrefab: {fileID: 2931593369882102028, guid: 34c3afa983fa62c43bcfafe87747cace, type: 3}
+  staminaGlobePrefab: {fileID: 2931593369882102028, guid: 4d6fc40b26ecf3441b475efe96a10a76, type: 3}
+--- !u!114 &-8600667230531918963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313583635444552015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2215406942cbfc4f95d798f7b626a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoinPrefab: {fileID: 2931593369882102028, guid: 1f0c00489a771644d9a84bfdbca145b7, type: 3}
+  healthGlobePrefab: {fileID: 2931593369882102028, guid: 34c3afa983fa62c43bcfafe87747cace, type: 3}
+  staminaGlobePrefab: {fileID: 2931593369882102028, guid: 4d6fc40b26ecf3441b475efe96a10a76, type: 3}
